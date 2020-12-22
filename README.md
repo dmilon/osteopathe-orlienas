@@ -1,1 +1,1 @@
-https://dmilon.github.io/osteopathe-orlienas/
+https://milon.tech
