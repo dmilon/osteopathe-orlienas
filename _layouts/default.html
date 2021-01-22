@@ -33,32 +33,13 @@
     {% include navbar.html %}
     {% include banner.html %}
 
-    <h1>Test</h1>
-
     <main class="flex-shrink-0">
       <div class="container">
-        <section>
-          <div>
-            <p>Je pratique une ostéopathie douce, basée sur une vision globale du corps humain et adaptée à tous : nourisson, enfant, femme enceinte, adulte, sportif et sénior.</p>
-            <p>En savoir plus</p>
-          </div>
-          <img src="/assets/images/portrait.jpg" alt="Portrait de Thibaud Colombel">
-        </section>
+        {% include card.html img_src="portrait.jpg" img_alt="Portrait de Thibaud Colombel" text="Je pratique une ostéopathie douce, basée sur une vision globale du corps humain et adaptée à tous : nourisson, enfant, femme enceinte, adulte, sportif et senior." %}
 
-        <section>
-          <img src="/assets/images/desk.jpg" alt="Bureau du cabinet de Thibaud Colombel">
-          <div>
-            <p>Les motifs de consultation sont variés : douleurs dorsales, entorses, migraine, stress ou règles douloureuses. Je soigne vos maux et vous donne des conseils pour prévenir leur réapparition.</p>
-            <p>En savoir plus</p>
-          </div>
-        </section>
+        {% include card.html img_src="desk.jpg" img_alt="Bureau du cabinet de Thibaud Colombel" text="Les motifs de consultation sont variés : douleurs dorsales, entorses, migraine, stress ou règles douloureuses. Je soigne vos maux et vous donne des conseils pour prévenir leur réapparition." %}
 
-        <section>
-          <p>Je vous accueille sur rendez-vous dans mon cabinet à Orliénas, à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à 20:00.</p>
-          <p>En savoir plus</p>
-          </div>
-          <img src="/assets/images/table.jpg" alt="Table de soin du cabinet de Thibaud Colombel">
-        </section>
+        {% include card.html img_src="table.jpg" img_alt="Table de soin du cabinet de Thibaud Colombel" text="Je vous accueille sur rendez-vous dans mon cabinet à Orliénas, à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à 20:00." %}
 
         <h2>Avis</h2>
         <a href="https://www.google.com/maps/place/Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.6584791,4.716462,17z/data=!4m7!3m6!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!8m2!3d45.6584754!4d4.7186507!9m1!1b1">Consulter les avis</a>
