@@ -5,27 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- TODO(dmilon): replace by seo -->
     <meta name="robots" content="noindex">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    {% include favicons.html %}
 
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   </head>
@@ -33,29 +16,27 @@
     {% include navbar.html %}
     {% include banner.html %}
 
-    <main class="flex-shrink-0">
-      <div class="container">
-        {% include card.html img_src="portrait.jpg" img_alt="Portrait de Thibaud Colombel" text="Je pratique une ostéopathie douce, basée sur une vision globale du corps humain et adaptée à tous : nourisson, enfant, femme enceinte, adulte, sportif et senior." %}
+    <main class="container">
+      <section>
+        {% for card in site.cards %}
+          {% include card.html img_src=card.img_src img_alt=card.img_alt text=card.content %}
+        {% endfor %}
+      </section>
 
-        {% include card.html img_src="desk.jpg" img_alt="Bureau du cabinet de Thibaud Colombel" text="Les motifs de consultation sont variés : douleurs dorsales, entorses, migraine, stress ou règles douloureuses. Je soigne vos maux et vous donne des conseils pour prévenir leur réapparition." %}
+      <h2>Avis</h2>
+      <a href="https://www.google.com/maps/place/Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.6584791,4.716462,17z/data=!4m7!3m6!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!8m2!3d45.6584754!4d4.7186507!9m1!1b1">Consulter les avis</a>
+      <a href="">Rédiger un avis</a>
 
-        {% include card.html img_src="table.jpg" img_alt="Table de soin du cabinet de Thibaud Colombel" text="Je vous accueille sur rendez-vous dans mon cabinet à Orliénas, à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à 20:00." %}
+      <h2>Galerie</h2>
 
-        <h2>Avis</h2>
-        <a href="https://www.google.com/maps/place/Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.6584791,4.716462,17z/data=!4m7!3m6!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!8m2!3d45.6584754!4d4.7186507!9m1!1b1">Consulter les avis</a>
-        <a href="">Rédiger un avis</a>
+      <h2>Carte intégrée et itinéraire</h2>
+      <a href="https://www.google.com/maps/dir//Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.658454,4.6486109,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!2m2!1d4.7186507!2d45.6584754">Itinéraire</a>
+      <p>Adresse : 201 rue des Veloutiers 69530 Orliénas</p>
 
-        <h2>Galerie</h2>
-
-        <h2>Carte intégrée et itinéraire</h2>
-        <a href="https://www.google.com/maps/dir//Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.658454,4.6486109,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!2m2!1d4.7186507!2d45.6584754">Itinéraire</a>
-        <p>Adresse : 201 rue des Veloutiers 69530 Orliénas</p>
-
-        <section>
-          <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel">Prendre rendez-vous</a>
-          <a href="tel:+33-7-68-39-90-66">Appelez-moi</a>
-        </section>
-      </div>
+      <section>
+        <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel">Prendre rendez-vous</a>
+        <a href="tel:+33-7-68-39-90-66">Appelez-moi</a>
+      </section>
     </main>
 
     <footer>
