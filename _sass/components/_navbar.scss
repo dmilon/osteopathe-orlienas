@@ -1,0 +1,23 @@
+.brand-name {
+  font-family: $brand-font;
+  font-size: 28px;
+  color: $blue;
+}
+
+.brand-tagline {
+  font-family: $headers-font;
+}
+
+.brand p {
+  margin: 0;
+}
+
+.cta-outine {
+  border-width: 10px;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: $blue;
+  color: $light-gray;
+}
