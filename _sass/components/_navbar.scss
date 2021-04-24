@@ -1,23 +1,36 @@
-.brand-name {
-  font-family: $brand-font;
-  font-size: 28px;
-  color: $blue;
+.navbar {
+  height: 75px;
 }
 
-.brand-tagline {
-  font-family: $headers-font;
+.logo {
+  height: 100%;
+  padding-right: 12px;
 }
 
 .brand p {
   margin: 0;
 }
 
-.cta-outine {
-  border-width: 10px;
+.brand-name {
+  font-family: $brand-font;
+  font-size: 2rem;
+  color: $blue;
+  line-height: 38px;
+}
+
+.brand-tagline {
+  font-family: $headers-font;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.btn {
+  border-width: 0.2em;
   font-weight: 600;
 }
 
 .btn-outline-primary:hover {
   background-color: $blue;
-  color: $light-gray;
+  color: white;
 }
+
