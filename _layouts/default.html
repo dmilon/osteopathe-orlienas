@@ -17,32 +17,18 @@
     {% include banner.html %}
 
     <main class="container">
-      <section class="mt-5">
-        {% for card in site.cards %}
-          {% include card.html img_src=card.img_src img_alt=card.img_alt text=card.content %}
-        {% endfor %}
-      </section>
-
-      <h2>Avis</h2>
-      <a href="https://www.google.com/maps/place/Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.6584791,4.716462,17z/data=!4m7!3m6!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!8m2!3d45.6584754!4d4.7186507!9m1!1b1">Consulter les avis</a>
-      <a href="">Rédiger un avis</a>
-
-      <h2>Galerie</h2>
-
-      <h2>Carte intégrée et itinéraire</h2>
-      <a href="https://www.google.com/maps/dir//Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.658454,4.6486109,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!2m2!1d4.7186507!2d45.6584754">Itinéraire</a>
-      <p>Adresse : 201 rue des Veloutiers 69530 Orliénas</p>
-
-      <section>
-        <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel">Prendre rendez-vous</a>
-        <a href="tel:+33-7-68-39-90-66">Appelez-moi</a>
-      </section>
+      {% include cards.html %}
+      {% include reviews.html %}
+      {% include gallery.html %}
+      {% include map.html %}
+      {% include contact.html %}
+      {% include footer.html %}
     </main>
 
-    <footer style="height: 1000px">
-      Made with :heart: by dmilon with Jekyll, hosted on GitHub Pages
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>

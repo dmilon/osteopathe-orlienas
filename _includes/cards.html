@@ -1,0 +1,5 @@
+<section class="mt-5 row">
+  {% for card in site.cards %}
+    {% include card.html img_src=card.img_src img_alt=card.img_alt text=card.content %}
+  {% endfor %}
+</section>
