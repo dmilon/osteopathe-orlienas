@@ -27,13 +27,6 @@
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  dmilon
-collections:
-  # cards:
-    # - img_src: portrait
-    #   img_alt: Portrait de Thibaud Colombel
-    #   text: "Je pratique une ostéopathie douce, basée sur une vision globale du corps humain et adaptée à tous : nourisson, enfant, femme enceinte, adulte, sportif et senior."
-  cards:
-    sort_by: position
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,3 +47,14 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+collections:
+  pages:
+    sort_by: position
+    output: true
+    permalink: /:name
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

@@ -1,3 +1,7 @@
+---
+title: Fin des consultations sans rendez-vous
+---
+
 C'est la fin des consultations sans rendez-vous le lundi matin au cabinet d'ostéopathie d'Orliénas !
 
 Dorénavant, les consultations se feront uniquement sur RDV !

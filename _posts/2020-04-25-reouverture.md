@@ -1,3 +1,7 @@
+---
+title: Réouverture du cabinet le 1er mai
+---
+
 Bonjour à tous,
 
 Je vous annonce la ré-ouverture du cabinet à partir du mardi 12 mai, une fois que les principales mesures de sécurité liées à la crise sanitaire en cours auront été mises en place.
@@ -11,5 +15,3 @@ Au plaisir de vous retrouver !
 Bien ostéopathiquement,
 
 Thibaud Colombel
-
-<a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel">RÉSERVER</a>

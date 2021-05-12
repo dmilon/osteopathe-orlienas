@@ -1,3 +1,7 @@
+---
+title: Le cabinet reste ouvert
+---
+
 Bonjour,
 
 Suite aux annonces gouvernementales, le cabinet restera OUVERT pendant toute la période de confinement et ce jusqu'à nouvel ordre.
@@ -9,5 +13,3 @@ Vous pouvez donc prendre rendez-vous comme à votre habitude. Cependant, j'invit
 Bien ostéopathiquement,
 
 Thibaud
-
-<a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel">RÉSERVER</a>

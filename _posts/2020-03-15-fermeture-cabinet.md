@@ -1,3 +1,7 @@
+---
+title: Fermeture exceptionnelle
+---
+
 <img src="/assets/images/sakura.jpg">
 
 Bonjour à tous,

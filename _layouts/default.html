@@ -14,17 +14,10 @@
   </head>
   <body>
     {% include navbar.html %}
-    {% include banner.html %}
-
-    <main class="container">
-      {% include cards.html %}
-      {% include reviews.html %}
-      {% include gallery.html %}
-      {% include map.html %}
-      {% include contact.html %}
-      {% include footer.html %}
+    <main class="full-height mt-nav">
+      {{ content }}
     </main>
-
+    {% include footer.html %}
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"

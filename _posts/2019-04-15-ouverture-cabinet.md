@@ -1,4 +1,6 @@
-C'est parti !
+---
+title: C'est parti !
+---
 
 Depuis mars, j'ai repris la patientèle de Joanna Baboin à Orliénas qui a décidé de partir vers de nouveaux horizons !
 

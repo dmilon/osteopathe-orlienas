@@ -1,3 +1,7 @@
+---
+title: Fermeture du cabinet du 31 décembre au 5 janvier
+---
+
 Bonjour !
 
 Pour information, le cabinet sera fermé du mardi 31 décembre après-midi jusqu'au 5 janvier !
