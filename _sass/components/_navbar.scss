@@ -2,9 +2,8 @@
   height: 75px;
 }
 
-.logo {
-  height: 100%;
-  padding-right: 12px;
+.brand-link, .brand-link:hover {
+  color: black;
 }
 
 .brand p {
@@ -32,5 +31,14 @@
 .btn-outline-primary:hover {
   background-color: $blue;
   color: white;
+}
+
+.nav-link {
+  color: black;
+
+  &.active {
+    color: $blue;
+    font-weight: bolder;
+  }
 }
 
