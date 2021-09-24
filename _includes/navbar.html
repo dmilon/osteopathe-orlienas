@@ -1,31 +1,30 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-white">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="d-flex brand-link" href="{{ '/' | relative_url }}">
-      <img
-        src="{{ '/assets/images/logo.png' | relative_url }}"
-        alt="logo de Thibaud Colombel, ostéopathe DO"
-        height="56"
-      >
-      <div class="brand text-center">
-        <p class="brand-name">Thibaud Colombel</p>
-        <p class="brand-tagline">OSTÉOPATHE À ORLIÉNAS</p>
-      </div>
-    </a>
-    <ul class="navbar-nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link {% if page.url == '/' %}active{% endif %}" aria-current="page" href="{{ '/' | relative_url }}">Accueil</a>
-      </li>
-      {% for node in site.pages %}
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">Ostéopathe Orliénas</a>
+    <div>
+      <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel" class="btn btn-outline-primary rounded me-2">Prendre rendez-vous</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link {% if page.url == node.url %}active{% endif %}" href="{{ site.baseurl }}/{{ node.url }}">{{node.title}}</a>
+          {% if page.url == '/' %}
+            <a class="nav-link active" aria-current="page" href="{{ '/' | relative_url }}">Accueil</a>
+          {% else %}
+            <a class="nav-link" href="{{ '/' | relative_url }}">Accueil</a>
+          {% endif %}
         </li>
-      {% endfor %}
-      <li class="nav-item">
-        <a class="nav-link {% if page.url == '/blog.html' %}active{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel" class="btn btn-outline-primary rounded">Prendre rendez-vous</a>
-      </li>
-    </ul>
+        {% for node in site.pages %}
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == node.url %}active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
+          </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/blog.html' %}active{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
