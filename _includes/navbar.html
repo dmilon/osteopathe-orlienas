@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <a class="d-flex brand-link" href="{{ '/' | relative_url }}">
       <img
-        src="/assets/images/logo.png"
+        src="{{ '/assets/images/logo.png' | relative_url }}"
         alt="logo de Thibaud Colombel, ostéopathe DO"
         height="56"
       >
@@ -16,10 +16,12 @@
         <a class="nav-link {% if page.url == '/' %}active{% endif %}" aria-current="page" href="{{ '/' | relative_url }}">Accueil</a>
       </li>
       {% for node in site.pages %}
-        <li class="nav-link {% if page.url == {{site.baseurl}}/{{node.url}} %}active{% endif %}"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == node.url %}active{% endif %}" href="{{ site.baseurl }}/{{ node.url }}">{{node.title}}</a>
+        </li>
       {% endfor %}
       <li class="nav-item">
-        <a class="nav-link {% if page.url == '/blog' %}active{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
+        <a class="nav-link {% if page.url == '/blog.html' %}active{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
       </li>
       <li class="nav-item">
         <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel" class="btn btn-outline-primary rounded">Prendre rendez-vous</a>
