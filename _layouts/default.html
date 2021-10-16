@@ -19,7 +19,9 @@
   </head>
   <body>
     {% include navbar.html %}
-    {{ content }}
+    <div class="full-height mt-nav">
+      {{ content }}
+    </div>
     {% include footer.html %}
     <script src="{{ '/assets/js/init_netlify_identity.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/init_update_navbar_on_scroll.js' | relative_url }}"></script>
