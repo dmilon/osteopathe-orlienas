@@ -6,5 +6,25 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
     fields:
-      - { name: Title }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    folder: '_pages'
+    create: true
+    slug: '{{title}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image source', name: 'img_src', widget: 'string' }
+      - { label: 'Image description', name: 'img_alt', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'number' }
