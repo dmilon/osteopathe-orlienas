@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Réouverture du cabinet le 1er mai
 ---
 

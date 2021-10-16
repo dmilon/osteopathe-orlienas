@@ -1,6 +1,6 @@
 ---
+layout: post
 title: C'est parti !
-Title: Some title
 ---
 
 Depuis mars, j'ai repris la patientèle de Joanna Baboin à Orliénas qui a décidé de partir vers de nouveaux horizons !

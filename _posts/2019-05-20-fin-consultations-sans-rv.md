@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Fin des consultations sans rendez-vous
 ---
 

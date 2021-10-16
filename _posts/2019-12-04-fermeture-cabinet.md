@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Fermeture du cabinet du 31 décembre au 5 janvier
 ---
 

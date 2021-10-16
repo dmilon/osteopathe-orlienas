@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ouverture le 1er mai
 ---
 

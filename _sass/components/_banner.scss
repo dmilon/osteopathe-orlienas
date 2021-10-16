@@ -4,10 +4,10 @@
   height: 460px;
   margin-top: 48px;
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/osteopathe-orlienas/assets/images/banner.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/images/banner.jpg');
 
   @media (max-width: 596px) {
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('{{ site.baseurl }}/assets/images/banner_mobile.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/images/banner_mobile.jpg');
   }
 }
 
