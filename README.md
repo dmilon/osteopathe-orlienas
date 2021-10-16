@@ -1,2 +1,2 @@
 <!-- TODO(dmilon): update URL -->
-Source code of the <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> project <a href="#" target="_blank">Ostéopathe Orliénas website and blog</a> hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+Source code of the [Jekyll](https://jekyllrb.com/)project [Ostéopathe Orliénas website and blog](#) website and blog hosted on [Netlify](https://www.netlify.com/)
