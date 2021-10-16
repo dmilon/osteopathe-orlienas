@@ -9,19 +9,30 @@
     <meta name="robots" content="noindex">
 
     {% include favicons.html %}
-
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <!-- MapBox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Netlify CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     {% include navbar.html %}
-    <main class="full-height mt-nav">
-      {{ content }}
-    </main>
+    {{ content }}
     {% include footer.html %}
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous">
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/init_update_navbar_on_scroll.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/init_mapbox.js' | relative_url }}"></script>
   </body>
 </html>
