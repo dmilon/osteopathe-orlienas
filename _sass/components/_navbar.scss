@@ -1,48 +1,25 @@
-// .navbar {
-//   height: 75px;
-// }
+.navbar {
+  .brand-link {
+    height: 40px;
+    text-decoration: none;
+  }
 
-// .brand-link, .brand-link:hover {
-//   color: black;
-// }
+  .brand-name {
+    font-family: $brand-font;
+    font-size: 1.5rem;
+    color: $blue;
+    line-height: 1.5rem;
+  }
 
-.brand-link {
-  height: 40px;
-  text-decoration: none;
+  .brand-tagline {
+    font-family: $headers-font;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $body-color;
+    line-height: 1rem;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
 }
-
-.brand-name {
-  font-family: $brand-font;
-  font-size: 1.5rem;
-  color: $blue;
-  line-height: 1.5rem;
-}
-
-.brand-tagline {
-  font-family: $headers-font;
-  font-size: 1rem;
-  font-weight: 600;
-  color: $body-color;
-
-  line-height: 1rem;
-}
-
-// .btn {
-//   border-width: 0.2em;
-//   font-weight: 600;
-// }
-
-// .btn-outline-primary:hover {
-//   background-color: $blue;
-//   color: white;
-// }
-
-// .nav-link {
-//   color: black;
-
-//   &.active {
-//     color: $blue;
-//     font-weight: bolder;
-//   }
-// }
-
