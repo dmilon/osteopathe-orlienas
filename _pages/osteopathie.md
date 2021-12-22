@@ -8,4 +8,3 @@ position: 1
 ---
 
 Les motifs de consultation sont variés : douleurs dorsales, entorses, migraine, stress ou règles douloureuses. Je soigne vos maux et vous donne des conseils pour prévenir leur réapparition.
-

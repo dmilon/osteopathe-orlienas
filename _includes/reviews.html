@@ -1,3 +1,13 @@
-<h2>Avis</h2>
-<a href="https://www.google.com/maps/place/Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.6584791,4.716462,17z/data=!4m7!3m6!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!8m2!3d45.6584754!4d4.7186507!9m1!1b1">Consulter les avis</a>
-<a href="">Rédiger un avis</a>
+<section class="row bg-primary pt-5 pb-3">
+  <div class="col-12">
+    <div class="d-flex flex-column bg-white border rounded mb-3 d-flex flex-column align-items-center justify-content-center">
+      <p class="fw-bold mt-2">Thibaud Colombel</p>
+      <p class="fw-bold">Ostéopathe D.O.</p>
+      <p class="fw-bold mb-2">5 / 5 ⭐⭐⭐⭐⭐ <a href="https://www.google.com/maps/place/Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.6584791,4.716462,17z/data=!4m7!3m6!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!8m2!3d45.6584754!4d4.7186507!9m1!1b1">104 avis</a></p>
+    </div>
+  </div>
+
+  {% for review in site.data.reviews %}
+    {% include review.html %}
+  {% endfor %}
+</section>
