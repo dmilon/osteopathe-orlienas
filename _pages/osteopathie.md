@@ -2,7 +2,7 @@
 layout: page
 title: Ostéopathie
 description: L'ostéopathie consiste à prévenir, diagnostiquer et traiter manuellement les dysfonctions du corps humain susceptibles d'en altérer l'état de santé.
-img_src: desk
+img_src: desk_2
 img_alt: Bureau du cabinet de Thibaud Colombel
 position: 1
 ---
