@@ -1,7 +1,9 @@
-<div class="intro-card border rounded d-flex mb-3 {% cycle 'position-odd', 'position-even' %}">
-  <img class="{% cycle 'rounded-start', 'rounded-end' %}" src="{{ site.baseurl }}/assets/images/{{ include.img_src }}.jpg" alt="{{ include.img_alt }}">
-  <div class="my-card-infos my-auto mx-3">
-    <p class="mt-0 lh-sm">{{ include.description }}</p>
-    <a href="{{ page.url }}"><p class="m-0 fw-bold">En savoir plus</p></a>
+<a href="{{ page.url }}">
+  <div class="intro-card border rounded d-flex mb-3 {% cycle 'position-odd', 'position-even' %} text-body">
+    <img class="{% cycle 'rounded-start', 'rounded-end' %}" src="{{ site.baseurl }}/assets/images/{{ page.img_src }}.jpg" alt="{{ page.img_alt }}">
+    <div class="my-card-infos my-auto mx-3">
+      <p class="mt-0 lh-sm">{{ page.summary }}</p>
+      <p class="m-0 fw-bold text-primary">En savoir plus</p>
+    </div>
   </div>
-</div>
+</a>

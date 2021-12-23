@@ -17,7 +17,7 @@ const initMapbox = () => {
       <p class="ff-open-sans fw-bold">Ostéopathe D.O.</p>
       <p class="ff-open-sans mb-0">201 rue des Veloutiers</p>
       <p class="ff-open-sans">69530 Orliénas</p>
-      <p class="ff-open-sans fw-bold"><a href="https://www.google.com/maps/dir//Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.658454,4.6486109,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!2m2!1d4.7186507!2d45.6584754">Itinéraire</a></p>
+      <p class="ff-open-sans fw-bold"><a href="https://www.google.com/maps/dir//Thibaud+Colombel+-+Ost%C3%A9opathe+D.O./@45.658454,4.6486109,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47f4ebb545f4a7c7:0x3f25f7330d67b73f!2m2!1d4.7186507!2d45.6584754" style="outline: 0;">Itinéraire</a></p>
     `
 
     const popup = new mapboxgl.Popup({ offset: 25 })

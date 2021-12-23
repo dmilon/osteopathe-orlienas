@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cabinet
-description: Je vous accueille sur rendez-vous dans mon cabinet à Orliénas, à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à 20:00.
+summary: Je vous accueille sur rendez-vous dans mon cabinet à Orliénas, à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à 20:00.
 img_src: front_door_2
 img_alt: Table de soin du cabinet de Thibaud Colombel
 position: 3
