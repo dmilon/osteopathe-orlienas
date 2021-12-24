@@ -2,14 +2,22 @@
 layout: default
 ---
 
-<div class="container">
-  <div class="pt-3">
-    <h1>{{ page.title }}</h1>
+<div class="post">
+  <h1 class="bg-primary text-white p-3 text-center">Blog</h1>
 
-    <p>{{ page.date | date_to_string }}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="py-3">
+          <h1>{{ page.title }}</h1>
 
-    {{ content }}
+          <p>{{ page.date | frenchDate }}</p>
 
-    <p><a href="/blog">Retour à la liste des articles</a></p>
+          {{ content }}
+
+          <a class="fw-bold" href="/blog"><i class="fas fa-arrow-left"></i> Retour à la liste des articles</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

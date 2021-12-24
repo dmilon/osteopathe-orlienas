@@ -1,4 +1,28 @@
-<section>
-  <a href="https://www.doctolib.fr/osteopathe/69005/thibaud-colombel">Prendre rendez-vous</a>
-  <a href="tel:+33-7-68-39-90-66">Appelez-moi</a>
+<section class="row pt-4 pb-5">
+  <div class="col-12">
+    <h2>Contactez-moi</h2>
+    <p class="mb-2">Par téléphone : <a href="tel:+33-7-68-39-90-66">07 68 39 90 66</a></p>
+    <p class="mb-2">Ou par message : </p>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mleapvey" method="post" class="">
+      <fieldset id="fs-frm-inputs">
+        <div class="mb-2">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" name="name" id="name" placeholder="Jean Dupond" required="" class="form-control">
+        </div>
+        <div class="mb-2">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="_replyto" id="email" placeholder="jean.dupond@gmail.com" required="" class="form-control">
+        </div>
+        <div class="mb-2">
+          <label for="message" class="form-label">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Bonjour, je vous contacte car je souhaiterais..." required="" class="form-control" style="resize: none"></textarea>
+        </div>
+        <input type="hidden" name="_subject" id="email-subject" value="Nouveau message concernant {{page.title}}">
+        <input type="hidden" name="page" value="{{page.id}}">
+      </fieldset>
+      <div class="my-auto">
+        <input type="submit" value="Envoyer" class="btn btn-outline-primary fw-bold"> ou <a href="mailto:milon.damien@gmail.com" class="link-primary">Envoyer-moi un email</a>
+      </div>
+    </form>
+  </div>
 </section>

@@ -1,6 +1,11 @@
-// body a {
-//   text-decoration: none;
-// }
+body a {
+  text-decoration: none;
+  color: $blue;
+
+  &:hover {
+    color: $blue;
+  }
+}
 
 .full-height {
   min-height: calc(100vh - 56px - 100px) // full height minus footer height
