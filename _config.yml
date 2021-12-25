@@ -60,6 +60,12 @@ defaults:
     values:
       layout: "default"
       title: "Thibaud Colombel - Ostéopathe à Orliénas"
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
 sass:
   load_paths:
     - _sass
