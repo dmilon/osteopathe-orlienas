@@ -1,6 +1,6 @@
 <a href="{{ page.url }}">
   <div class="intro-card border rounded d-flex mb-3 {% cycle 'position-odd', 'position-even' %} text-body">
-    <img class="{% cycle 'rounded-start', 'rounded-end' %}" src="{{ site.baseurl }}/assets/images/{{ page.card_img_src }}.jpg" alt="{{ page.card_img_alt }}">
+    <img class="{% cycle 'rounded-start', 'rounded-end' %}" src="{{ page.card_img_src }}" alt="{{ page.card_img_alt }}">
     <div class="my-auto mx-3">
       <p class="mt-0 lh-sm">{{ page.card_description }}</p>
       <p class="m-0 fw-bold text-primary">En savoir plus</p>

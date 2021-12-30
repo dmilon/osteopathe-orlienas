@@ -2,9 +2,9 @@
 layout: page
 title: Thérapeute
 card_description: "Je pratique une ostéopathie douce, basée sur une vision globale du corps humain et adaptée à tous : nourisson, enfant, femme enceinte, adulte, sportif et senior."
-card_img_src: therapist_1
+card_img_src: /assets/uploads/therapist_1.jpg
 card_img_alt: Portrait de Thibaud Colombel - Ostéopathe D.O.
-page_img_src: therapist_2
+page_img_src: /assets/uploads/therapist_2.jpg
 page_img_alt: Séance d'ostéopathie avec Thibaud Colombel - Ostéopathe D.O.
 position: 2
 ---
