@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Nouvelle page
-card_img_src: /assets/uploads/national-cancer-institute-l8twzt4ccvq-unsplash.jpg
+card_description: "Bonjour à tous. Voici la description de la carte de ma nouvelle page ! "
+card_img_src: /assets/uploads/desk_2.jpg
 card_img_alt: docteur avec smartphone
-page_img_src: https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+page_img_src: /assets/uploads/front_door_1.jpg
 page_img_alt: pc portable et stetoscope
 position: 4
 ---
