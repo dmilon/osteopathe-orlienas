@@ -3,11 +3,10 @@ layout: post
 title: "Nouveau post de blog depuis Netlify CMS ! "
 date: 2021-10-16T11:46:12.701Z
 ---
+
 **Hello LES AMIS**
 
-# **Heading 1**
-
-
+## **Heading 2**
 
 #### Heading 4
 

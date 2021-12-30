@@ -2,34 +2,29 @@
 layout: default
 ---
 
-<h1 class="bg-primary text-white p-3 text-center">Blog</h1>
+<h1 class="bg-primary text-white p-3 text-center navbar-trigger">Blog</h1>
 
 <div class="container">
-  <div class="row">
+  <section class="row py-3">
+
     {% for post in site.posts %}
-      <div class="col-12 col-lg-6 p-3">
-        <a href="{{ post.url | relative_url }}">
-          <!-- <div class="card-blog rounded">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-blog-infos">
-              <h2></h2>
-              <p>blog description with <strong>relevant info</strong> only.</p>
-            </div>
-          </div> -->
-          <div class="card-blog rounded">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-blog-infos">
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.content }}</p>
-            </div>
+      <div class="col-12">
+        <a href="{{ post.url }}">
+          <div class="h-250px border rounded mb-3 text-body p-3 d-flex flex-column">
+            <h2 class="overflow-ellipsis">{{ post.title }}</h2>
+            <p class="text-secondary">{{ post.date | date_to_french }}</p>
+            <p class="mt-0 lh-sm multiline-overflow-ellipsis">{{ post.content | strip_html }}</p>
+            <p class="flex-grow-1"></p>
+            <p class="m-0 fw-bold text-primary">En savoir plus</p>
           </div>
         </a>
       </div>
     {% endfor %}
-    <div class="col-12 pb-3">
+
+    <div class="col-12">
       <a class="fw-bold" href="/"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
     </div>
-  </div>
+  </section>
 </div>
 
 

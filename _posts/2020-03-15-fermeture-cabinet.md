@@ -3,8 +3,6 @@ layout: post
 title: Fermeture exceptionnelle
 ---
 
-<!-- <img src="/assets/images/sakura.jpg"> -->
-
 Bonjour à tous,
 
 À circonstances exceptionnelles, mesures exceptionnelles...

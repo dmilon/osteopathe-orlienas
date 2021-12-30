@@ -3,7 +3,6 @@ layout: post
 title: Nouveau post
 date: 2021-12-24T13:56:40.834Z
 ---
-# Titre 1
 
 ## Titre 2
 

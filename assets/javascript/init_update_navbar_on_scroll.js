@@ -1,17 +1,19 @@
 const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar')
-  if (navbar) {
+  const triggerElement = document.querySelector('.navbar-trigger')
+  if (navbar && triggerElement) {
     const navbarCta = navbar.querySelector('#navbar-cta')
     const brandText = navbar.querySelector('.brand-text')
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= 460) {
+      const triggerElementRectangle = triggerElement.getBoundingClientRect()
+      if (triggerElementRectangle.bottom <= navbar.offsetHeight) {
         brandText.classList.add('d-none')
         navbarCta.classList.remove('d-none')
       } else {
         brandText.classList.remove('d-none')
         navbarCta.classList.add('d-none')
       }
-    });
+    })
   }
 }
 
