@@ -20,10 +20,6 @@ Je mets un [lien](https://mon-osteopathe-paris.fr/questions-frequentes-sur-loste
 * two
 * three
 
-![Manipulation en cours](/assets/uploads/therapist_2.jpg "Titre de l'image")
-
-
-
 ```ruby
 def hello_there
   puts "hello"

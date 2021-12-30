@@ -25,9 +25,9 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Card image source', name: 'card_img_src', widget: 'string' }
+      - { label: 'Card image', name: 'card_img_src', widget: 'image', choose_url: true, default: /uploads/desk_1.jpg }
       - { label: 'Card image description', name: 'card_img_alt', widget: 'string' }
-      - { label: 'Page image source', name: 'page_img_src', widget: 'string' }
+      - { label: 'Page image', name: 'page_img_src', widget: 'image', choose_url: true, default: /uploads/desk_1.jpg }
       - { label: 'Page image description', name: 'page_img_alt', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
