@@ -25,6 +25,7 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Card description', name: 'card_description', widget: 'string' }
       - { label: 'Card image', name: 'card_img_src', widget: 'image', choose_url: true }
       - { label: 'Card image description', name: 'card_img_alt', widget: 'string' }
       - { label: 'Page image', name: 'page_img_src', widget: 'image', choose_url: true }
