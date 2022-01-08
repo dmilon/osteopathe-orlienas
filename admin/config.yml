@@ -41,8 +41,8 @@ collections:
         label: 'Reviews'
         file: '_data/reviews.yml'
         fields:
-          - label: 'Review'
-            name: 'review'
+          - label: 'Selections'
+            name: 'selections'
             widget: 'list'
             fields:
               - { label: Name, name: name, widget: string }

@@ -5,7 +5,7 @@
         <div class="d-flex flex-column bg-white rounded mb-3 d-flex flex-column align-items-center justify-content-center">
           <p class="fw-bold mt-2">Thibaud Colombel</p>
           <p class="fw-bold">Ostéopathe D.O.</p>
-          <p class="mb-2">5 / 5 ⭐⭐⭐⭐⭐ 106 avis</p>
+          <p class="mb-2">5 / 5 ⭐⭐⭐⭐⭐ {{ site.data.reviews.total_number }} avis</p>
           <p class="">
             <a class="fw-bold" href="https://search.google.com/local/reviews?placeid=ChIJx6f0RbXr9EcRP7dnDTP3JT8">Consulter</a>
              ou
@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      {% for review in site.data.reviews.reviews %}
+      {% for review in site.data.reviews.selections %}
         {% include review.html %}
       {% endfor %}
     </div>
