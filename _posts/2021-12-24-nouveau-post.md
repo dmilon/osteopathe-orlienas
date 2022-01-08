@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Nouveau post
-date: 2021-12-24T13:56:40.834Z
+title: Nouveau post avec un titre mis à jour
+date: 2022-01-08T13:56:40.834Z
 ---
-
 ## Titre 2
 
 **Bold**
@@ -20,8 +19,6 @@ Je mets un [lien](https://mon-osteopathe-paris.fr/questions-frequentes-sur-loste
 * two
 * three
 
-```ruby
-def hello_there
-  puts "hello"
-end
-```
+
+
+![](/assets/uploads/front_door_1.jpg)
