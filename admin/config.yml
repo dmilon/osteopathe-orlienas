@@ -3,8 +3,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'posts'
+    label: 'Posts'
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -32,3 +32,19 @@ collections:
       - { label: 'Page image description', name: 'page_img_alt', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - name: 'reviews'
+        label: 'Reviews'
+        file: '_data/reviews.yml'
+        fields:
+          - label: 'Review'
+            name: 'review'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Content, name: content, widget: string }
+              - { label: Rating, name: rating, widget: number }
