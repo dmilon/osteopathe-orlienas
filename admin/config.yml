@@ -1,7 +1,6 @@
 backend:
-  name: test-repo
-  # name: git-gateway
-  # branch: master # Branch to update (optional; defaults to master)
+  name: git-gateway
+  branch: master # NOTE(dmilon): replace by test-repo to test locally
 site_url: https://osteopathe-orlienas.fr
 media_folder: assets/uploads
 collections:
