@@ -1,50 +1,83 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/uploads'
+  name: test-repo
+  # name: git-gateway
+  # branch: master # Branch to update (optional; defaults to master)
+site_url: https://osteopathe-orlienas.fr
+media_folder: assets/uploads
 collections:
-  - name: 'posts'
-    label: 'Posts'
-    folder: '_posts/'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
-    label: 'Pages'
-    folder: '_pages'
-    create: true
-    slug: '{{title}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Card description', name: 'card_description', widget: 'string' }
-      - { label: 'Card image', name: 'card_img_src', widget: 'image', choose_url: true }
-      - { label: 'Card image description', name: 'card_img_alt', widget: 'string' }
-      - { label: 'Page image', name: 'page_img_src', widget: 'image', choose_url: true }
-      - { label: 'Page image description', name: 'page_img_alt', widget: 'string' }
-      - { label: 'Position', name: 'position', widget: 'number' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'config'
-    label: 'Config'
+  - name: gallery
+    label: Gallery
+    description: Images du carrousel sur la page d'accueil
     editor:
       preview: false
     files:
-      - name: 'reviews'
-        label: 'Reviews'
-        file: '_data/reviews.yml'
+      - name: Gallery
+        label: gallery
+        file: _data/gallery.yml
         fields:
-          - label: 'Selections'
-            name: 'selections'
-            widget: 'list'
+          - label: Images
+            name: images
+            widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Content, name: content, widget: string }
-              - { label: Rating, name: rating, widget: number }
+              - { name: src, label: Image, widget: image, choose_url: true, hint: L'image de la galerie }
+              - { name: alt, label: Description, widget: string, hint: La description de l'image pour les personnes mal-voyantes }
+  - name: reviews
+    label: Reviews
+    description: Avis sur la page d'accueil
+    editor:
+      preview: false
+    files:
+      - name: reviews
+        label: Reviews
+        file: _data/reviews.yml
+        fields:
+          - label: Reviews
+            name: selections
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string, hint: Nom du patient }
+              - { label: Content, name: content, widget: string, hint: Contenu de l'avis }
+              - { label: Rating, name: rating, widget: number, hint: Note }
+              - { label: Color, name: color, widget: hidden, default: "#ab47bc"  }
+          - { label: Total number, name: total_number, widget: number, hint: Nombre total d'avis }
+  - name: pages
+    label: Pages
+    description: Pages du site accessibles depuis la page d'accueil via les cartes
+    label_singular: Page
+    folder: _pages
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: page }
+      - { label: 'Position', name: 'position', widget: 'number', hint: La position de la page }
+      - { label: Title, name: title, widget: string, hint: Le titre de la page. Apparaitra aussi comme lien dans la navigation }
+      - { label: Card description, name: card_description, widget: string, hint: Le texte de la carte sur la page d'accueil }
+      - label: Card image
+        name: card_img
+        widget: object
+        fields:
+          - { name: src, label: Image, widget: image, choose_url: true, hint: L'image de la carte sur la page d'accueil }
+          - { name: alt, label: Description, widget: string, hint: La description de l'image pour les personnes mal-voyantes }
+      - label: Page image
+        name: page_img
+        widget: object
+        fields:
+          - { name: src, label: Image, widget: image, choose_url: true, hint: L'image sur la page }
+          - { name: alt, label: Description, widget: string, hint: La description de l'image pour les personnes mal-voyantes }
+      - { label: Body, name: body, widget: markdown, hint: Le contenu de la page }
+  - name: posts
+    label: Posts
+    description: Articles du blog
+    label_singular: Post
+    folder: _posts
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: post }
+      - { label: Title, name: title, widget: string, hint: Le titre de ton article }
+      - { label: Publish Date, name: date, widget: datetime, date_format: YYYY-MM-DD, time_format: 'HH:mm', format: 'YYYY-MM-DD HH:mm', hint: La date de publication }
+      - { label: Body, name: body, widget: markdown, hint: Le contenu de l'article }
