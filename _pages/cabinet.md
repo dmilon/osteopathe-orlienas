@@ -1,12 +1,20 @@
 ---
 layout: page
-title: Cabinet
-card_description: Je vous accueille sur rendez-vous dans mon cabinet à Orliénas, à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à 20:00.
-card_img_src: /assets/uploads/front_door_2.jpg
-card_img_alt: Devanture du cabinet de Thibaud Colombel - Ostéopathe D.O.
-page_img_src: /assets/uploads/table.jpg
-page_img_alt: Table de soin du cabinet de Thibaud Colombel - Ostéopathe D.O.
 position: 3
+card_description: Je vous accueille sur rendez-vous dans mon cabinet à Orliénas,
+  à 20 minutes en voiture du centre de Lyon, du lundi au vendredi, de 09:00 à
+  20:00.
+card_img:
+  src: /assets/uploads/waiting_room.jpg
+  alt: test
+page_img:
+  src: /assets/uploads/desk_1.jpg
+  alt: Bureau du cabinet de Thibaud Colombel - Ostéopathe D.O.
+page_img_src: /assets/uploads/table.jpg
+title: Cabinet
+card_img_src: /assets/uploads/front_door_2.jpg
+page_img_alt: Table de soin du cabinet de Thibaud Colombel - Ostéopathe D.O.
+card_img_alt: Devanture du cabinet de Thibaud Colombel - Ostéopathe D.O.
 ---
 
 ## Titre 1
