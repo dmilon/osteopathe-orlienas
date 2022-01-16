@@ -1,14 +1,22 @@
 selections:
   - name: Florence
-    content: Je cherchais un ostéopathe pour soulager mon dos bloqué depuis quelques jours, j’ai pris RDV chez Thibaud Colombel un peu au hasard et et je suis ravie. De nature anxieuse, j’ai  bien vécue la séance, en douceur et en confiance, et surtout je peux enfin me redresser sans douleurs. Merci encore ! Je recommande vivement !
+    content: Je cherchais un ostéopathe pour soulager mon dos bloqué depuis quelques
+      jours, j’ai pris RDV chez Thibaud Colombel un peu au hasard et et je suis
+      ravie. De nature anxieuse, j’ai  bien vécue la séance, en douceur et en
+      confiance, et surtout je peux enfin me redresser sans douleurs. Merci
+      encore ! Je recommande vivement !
     rating: 5
     color: "#ab47bc"
   - name: Bruno
-    content: Méthode douce et manipulations sans douleurs. je viens régulièrement pour un entretien et un rééquilibrage global. J'en ressort détendu et soulagé des tensions vertébrales et articulaires, après quelques jours de consolidation je suis comme "remis à neuf". Excellent praticien.
+    content: Méthode douce et manipulations sans douleurs. je viens régulièrement
+      pour un entretien et un rééquilibrage global. J'en ressort détendu et
+      soulagé des tensions vertébrales et articulaires, après quelques jours de
+      consolidation je suis comme "remis à neuf". Excellent praticien.
     rating: 5
     color: "#ef6c00"
   - name: Axelle
-    content: Excellent professionnel qui prend en considération chaque émotion de bébé et prend le temps de l'accompagner de part des gestes bienveillants.
+    content: Excellent professionnel qui prend en considération chaque émotion de
+      bébé et prend le temps de l'accompagner de part des gestes bienveillants.
     rating: 5
     color: "#33691e"
-total_number: 107
+total_number: 108
