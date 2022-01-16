@@ -35,7 +35,7 @@ collections:
             widget: list
             fields:
               - { label: Name, name: name, widget: string, hint: Nom du patient }
-              - { label: Content, name: content, widget: string, hint: Contenu de l'avis }
+              - { label: Content, name: content, widget: text, hint: Contenu de l'avis }
               - { label: Rating, name: rating, widget: number, hint: Note }
               - { label: Color, name: color, widget: hidden, default: "#ab47bc"  }
           - { label: Total number, name: total_number, widget: number, hint: Nombre total d'avis }
@@ -52,7 +52,7 @@ collections:
       - { label: Layout, name: layout, widget: hidden, default: page }
       - { label: 'Position', name: 'position', widget: 'number', hint: La position de la page }
       - { label: Title, name: title, widget: string, hint: Le titre de la page. Apparaitra aussi comme lien dans la navigation }
-      - { label: Card description, name: card_description, widget: string, hint: Le texte de la carte sur la page d'accueil }
+      - { label: Card description, name: card_description, widget: text, hint: Le texte de la carte sur la page d'accueil }
       - label: Card image
         name: card_img
         widget: object
