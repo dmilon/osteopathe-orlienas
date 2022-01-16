@@ -4,8 +4,8 @@ backend:
 site_url: https://osteopathe-orlienas.fr
 media_folder: assets/uploads
 collections:
-  - name: gallery
-    label: Gallery
+  - name: Gallery
+    label: gallery
     description: Images du carrousel sur la page d'accueil
     editor:
       preview: false
