@@ -19,6 +19,4 @@ Je mets un [lien](https://mon-osteopathe-paris.fr/questions-frequentes-sur-loste
 * two
 * three
 
-
-
-![](/assets/uploads/front_door_1.jpg)
+![alt text](/assets/uploads/front_door_1.jpg "title")
